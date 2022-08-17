@@ -1,6 +1,9 @@
 package design.aFactory;
 
+import com.demo.design.aFactory.impl.CardStoreFactory;
 import com.demo.design.aFactory.CommodityService;
+import com.demo.design.aFactory.impl.CouponStoreFactory;
+import com.demo.design.aFactory.impl.GoodsStoreFactory;
 import com.demo.design.aFactory.StoreFactory;
 import java.util.HashMap;
 import java.util.Map;
@@ -10,14 +13,15 @@ public class ApiTest {
 
     @Test
     public void test_commodity() throws Exception {
-        StoreFactory storeFactory = new StoreFactory();
 
         // 1. 优惠券
-        CommodityService commodityService_1 = storeFactory.getCommodityService(1);
+        StoreFactory storeFactory1 = new CouponStoreFactory();
+        CommodityService commodityService_1 = storeFactory1.getCommodityService();
         commodityService_1.sendCommodity("10001", "EGM1023938910232121323432", "791098764902132", null);
 
         // 2. 实物商品
-        CommodityService commodityService_2 = storeFactory.getCommodityService(2);
+        StoreFactory storeFactory_2 = new GoodsStoreFactory();
+        CommodityService commodityService_2 = storeFactory_2.getCommodityService();
         Map<String, String> extMap = new HashMap<String, String>();
         extMap.put("consigneeUserName", "谢⻜机");
         extMap.put("consigneeUserPhone", "15200292123");
@@ -25,8 +29,8 @@ public class ApiTest {
         commodityService_2.sendCommodity("10001", "9820198721311", "1023000020112221113", extMap);
 
         // 3. 第三⽅兑换卡(爱奇艺)
-        CommodityService commodityService_3 = storeFactory.getCommodityService(3);
-
+        StoreFactory storeFactory_3 = new CardStoreFactory();
+        CommodityService commodityService_3 = storeFactory_3.getCommodityService();
         commodityService_3.sendCommodity("10001", "AQY1xjkUodl8LO975GdfrYUio", null, null);
     }
 }
