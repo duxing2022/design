@@ -1,8 +1,8 @@
 package design.bAbstractFactory;
 
-import com.demo.design.bAbstractFactory.Color;
-import com.demo.design.bAbstractFactory.Shape;
-import com.demo.design.bAbstractFactory.factory.AbstractFactory;
+import com.demo.design.bAbstractFactory.product.Color;
+import com.demo.design.bAbstractFactory.product.Shape;
+import com.demo.design.bAbstractFactory.factory.impl.AbstractFactory;
 import com.demo.design.bAbstractFactory.factory.FactoryProducer;
 import org.junit.Test;
 

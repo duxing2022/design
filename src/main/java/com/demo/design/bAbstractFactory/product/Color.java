@@ -1,4 +1,4 @@
-package com.demo.design.bAbstractFactory;
+package com.demo.design.bAbstractFactory.product;
 
 /**
  * 颜色

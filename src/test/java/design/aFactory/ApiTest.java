@@ -1,10 +1,10 @@
 package design.aFactory;
 
-import com.demo.design.aFactory.impl.CardStoreFactory;
-import com.demo.design.aFactory.CommodityService;
-import com.demo.design.aFactory.impl.CouponStoreFactory;
-import com.demo.design.aFactory.impl.GoodsStoreFactory;
-import com.demo.design.aFactory.StoreFactory;
+import com.demo.design.aFactory.factory.impl.CardStoreFactory;
+import com.demo.design.aFactory.product.CommodityService;
+import com.demo.design.aFactory.factory.impl.CouponStoreFactory;
+import com.demo.design.aFactory.factory.impl.GoodsStoreFactory;
+import com.demo.design.aFactory.factory.StoreFactory;
 import java.util.HashMap;
 import java.util.Map;
 import org.junit.Test;

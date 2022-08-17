@@ -1,11 +1,11 @@
-package com.demo.design.bAbstractFactory.factory;
+package com.demo.design.bAbstractFactory.factory.impl;
 
 
-import com.demo.design.bAbstractFactory.Color;
-import com.demo.design.bAbstractFactory.Shape;
-import com.demo.design.bAbstractFactory.impl.Blue;
-import com.demo.design.bAbstractFactory.impl.Green;
-import com.demo.design.bAbstractFactory.impl.Red;
+import com.demo.design.bAbstractFactory.product.Color;
+import com.demo.design.bAbstractFactory.product.Shape;
+import com.demo.design.bAbstractFactory.product.impl.Blue;
+import com.demo.design.bAbstractFactory.product.impl.Green;
+import com.demo.design.bAbstractFactory.product.impl.Red;
 
 /**
  * 颜色工厂

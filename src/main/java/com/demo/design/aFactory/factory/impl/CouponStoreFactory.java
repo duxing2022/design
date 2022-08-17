@@ -1,7 +1,8 @@
-package com.demo.design.aFactory.impl;
+package com.demo.design.aFactory.factory.impl;
 
-import com.demo.design.aFactory.CommodityService;
-import com.demo.design.aFactory.StoreFactory;
+import com.demo.design.aFactory.product.CommodityService;
+import com.demo.design.aFactory.factory.StoreFactory;
+import com.demo.design.aFactory.product.impl.CouponCommodityServiceImpl;
 
 /**
  * 优惠劵工厂

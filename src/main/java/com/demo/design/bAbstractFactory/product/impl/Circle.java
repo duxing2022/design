@@ -1,6 +1,6 @@
-package com.demo.design.bAbstractFactory.impl;
+package com.demo.design.bAbstractFactory.product.impl;
 
-import com.demo.design.bAbstractFactory.Shape;
+import com.demo.design.bAbstractFactory.product.Shape;
 import lombok.extern.slf4j.Slf4j;
 
 /**

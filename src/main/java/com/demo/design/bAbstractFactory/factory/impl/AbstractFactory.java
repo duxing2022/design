@@ -1,8 +1,8 @@
-package com.demo.design.bAbstractFactory.factory;
+package com.demo.design.bAbstractFactory.factory.impl;
 
 
-import com.demo.design.bAbstractFactory.Color;
-import com.demo.design.bAbstractFactory.Shape;
+import com.demo.design.bAbstractFactory.product.Color;
+import com.demo.design.bAbstractFactory.product.Shape;
 
 /**
  * 抽象工厂

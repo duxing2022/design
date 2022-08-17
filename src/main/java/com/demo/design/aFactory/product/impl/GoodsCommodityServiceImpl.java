@@ -1,7 +1,7 @@
-package com.demo.design.aFactory.impl;
+package com.demo.design.aFactory.product.impl;
 
 import cn.hutool.json.JSONUtil;
-import com.demo.design.aFactory.CommodityService;
+import com.demo.design.aFactory.product.CommodityService;
 import com.demo.design.aFactory.goods.DeliverReq;
 import com.demo.design.aFactory.goods.GoodsService;
 import java.util.Map;

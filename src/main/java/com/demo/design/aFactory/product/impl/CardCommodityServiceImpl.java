@@ -1,7 +1,7 @@
-package com.demo.design.aFactory.impl;
+package com.demo.design.aFactory.product.impl;
 
 import cn.hutool.json.JSONUtil;
-import com.demo.design.aFactory.CommodityService;
+import com.demo.design.aFactory.product.CommodityService;
 import com.demo.design.aFactory.card.IQiYiCardService;
 import java.util.Map;
 import lombok.extern.slf4j.Slf4j;

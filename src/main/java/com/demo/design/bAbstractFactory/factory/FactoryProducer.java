@@ -1,5 +1,8 @@
 package com.demo.design.bAbstractFactory.factory;
 
+import com.demo.design.bAbstractFactory.factory.impl.AbstractFactory;
+import com.demo.design.bAbstractFactory.factory.impl.ColorFactory;
+
 /**
  * 工厂生产者
  *

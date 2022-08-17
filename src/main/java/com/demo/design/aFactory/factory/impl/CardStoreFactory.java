@@ -1,7 +1,8 @@
-package com.demo.design.aFactory.impl;
+package com.demo.design.aFactory.factory.impl;
 
-import com.demo.design.aFactory.CommodityService;
-import com.demo.design.aFactory.StoreFactory;
+import com.demo.design.aFactory.product.CommodityService;
+import com.demo.design.aFactory.factory.StoreFactory;
+import com.demo.design.aFactory.product.impl.CardCommodityServiceImpl;
 
 /**
  * 第三方兑换卡工厂

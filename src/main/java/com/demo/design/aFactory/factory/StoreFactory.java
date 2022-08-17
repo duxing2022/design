@@ -1,4 +1,6 @@
-package com.demo.design.aFactory;
+package com.demo.design.aFactory.factory;
+
+import com.demo.design.aFactory.product.CommodityService;
 
 /**
  * 商店工厂

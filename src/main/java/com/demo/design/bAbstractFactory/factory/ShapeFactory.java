@@ -1,11 +1,12 @@
 package com.demo.design.bAbstractFactory.factory;
 
 
-import com.demo.design.bAbstractFactory.Color;
-import com.demo.design.bAbstractFactory.Shape;
-import com.demo.design.bAbstractFactory.impl.Circle;
-import com.demo.design.bAbstractFactory.impl.Rectangle;
-import com.demo.design.bAbstractFactory.impl.Square;
+import com.demo.design.bAbstractFactory.product.Color;
+import com.demo.design.bAbstractFactory.product.Shape;
+import com.demo.design.bAbstractFactory.factory.impl.AbstractFactory;
+import com.demo.design.bAbstractFactory.product.impl.Circle;
+import com.demo.design.bAbstractFactory.product.impl.Rectangle;
+import com.demo.design.bAbstractFactory.product.impl.Square;
 
 /**
  * 形状工厂
