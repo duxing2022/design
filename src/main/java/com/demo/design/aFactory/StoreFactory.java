@@ -1,7 +1,7 @@
 package com.demo.design.aFactory;
 
 import com.demo.design.aFactory.impl.CardCommodityServiceImpl;
-import com.demo.design.aFactory.impl.CoupCommodityServiceImpl;
+import com.demo.design.aFactory.impl.CouponCommodityServiceImpl;
 import com.demo.design.aFactory.impl.GoodsCommodityServiceImpl;
 
 /**
@@ -18,7 +18,7 @@ public class StoreFactory {
         }
 
         if (1 == commodityType) {
-            return new CoupCommodityServiceImpl();
+            return new CouponCommodityServiceImpl();
         }
         if (2 == commodityType) {
             return new GoodsCommodityServiceImpl();
