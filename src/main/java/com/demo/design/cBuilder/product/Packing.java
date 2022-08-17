@@ -1,7 +1,7 @@
 package com.demo.design.cBuilder.product;
 
 /**
- * 包装
+ * 食物包装
  *
  * @author Administrator
  * @date 2022/08/17

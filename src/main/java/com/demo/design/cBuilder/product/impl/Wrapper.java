@@ -1,7 +1,9 @@
-package com.demo.design.cBuilder.product;
+package com.demo.design.cBuilder.product.impl;
+
+import com.demo.design.cBuilder.product.Packing;
 
 /**
- * 包装
+ * 包装纸
  *
  * @author Administrator
  * @date 2022/08/17

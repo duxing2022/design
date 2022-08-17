@@ -1,6 +1,6 @@
 package com.demo.design.cBuilder.concreteBuilder;
 
-import com.demo.design.cBuilder.builder.Burger;
+import com.demo.design.cBuilder.builder.impl.Burger;
 
 /**
  * 鸡肉汉堡

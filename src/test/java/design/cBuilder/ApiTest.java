@@ -1,6 +1,6 @@
 package design.cBuilder;
 
-import com.demo.design.cBuilder.concreteBuilder.Meal;
+import com.demo.design.cBuilder.director.Meal;
 import com.demo.design.cBuilder.director.MealBuilder;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;

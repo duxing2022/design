@@ -1,6 +1,6 @@
-package com.demo.design.cBuilder.concreteBuilder;
+package com.demo.design.cBuilder.director;
 
-import com.demo.design.cBuilder.product.Item;
+import com.demo.design.cBuilder.builder.Item;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class Meal {
 
-    private List<Item> items = new ArrayList<Item>();
+    private List<Item> items = new ArrayList<>();
 
     public void addItem(Item item) {
         items.add(item);

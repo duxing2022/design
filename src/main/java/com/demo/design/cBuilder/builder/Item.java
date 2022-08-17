@@ -1,7 +1,9 @@
-package com.demo.design.cBuilder.product;
+package com.demo.design.cBuilder.builder;
+
+import com.demo.design.cBuilder.product.Packing;
 
 /**
- * 条目
+ * 食物条目
  *
  * @author Administrator
  * @date 2022/08/17

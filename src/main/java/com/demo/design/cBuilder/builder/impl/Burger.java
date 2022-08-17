@@ -1,20 +1,20 @@
-package com.demo.design.cBuilder.builder;
+package com.demo.design.cBuilder.builder.impl;
 
-import com.demo.design.cBuilder.product.Item;
-import com.demo.design.cBuilder.product.Bottle;
+import com.demo.design.cBuilder.builder.Item;
 import com.demo.design.cBuilder.product.Packing;
+import com.demo.design.cBuilder.product.impl.Wrapper;
 
 /**
- * 冷饮
+ * 汉堡
  *
  * @author Administrator
  * @date 2022/08/17
  */
-public abstract class ColdDrink implements Item {
+public abstract class Burger implements Item {
 
     @Override
     public Packing packing() {
-        return new Bottle();
+        return new Wrapper();
     }
 
     /**

@@ -1,9 +1,9 @@
 package com.demo.design.cBuilder.concreteBuilder;
 
-import com.demo.design.cBuilder.builder.ColdDrink;
+import com.demo.design.cBuilder.builder.impl.ColdDrink;
 
 /**
- * 焦炭
+ * 可口可乐
  *
  * @author Administrator
  * @date 2022/08/17

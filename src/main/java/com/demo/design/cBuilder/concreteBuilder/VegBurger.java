@@ -1,9 +1,9 @@
 package com.demo.design.cBuilder.concreteBuilder;
 
-import com.demo.design.cBuilder.builder.Burger;
+import com.demo.design.cBuilder.builder.impl.Burger;
 
 /**
- * 墙汉堡
+ * 素食汉堡
  *
  * @author Administrator
  * @date 2022/08/17

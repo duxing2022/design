@@ -1,6 +1,6 @@
 package com.demo.design.cBuilder.concreteBuilder;
 
-import com.demo.design.cBuilder.builder.ColdDrink;
+import com.demo.design.cBuilder.builder.impl.ColdDrink;
 
 /**
  * 百事可乐
