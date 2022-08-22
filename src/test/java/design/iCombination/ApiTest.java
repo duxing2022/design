@@ -1,16 +1,7 @@
 package design.iCombination;
 
-import com.demo.design.hFilter.abstractFilter.Criteria;
-import com.demo.design.hFilter.concreteFilter.DryRubbishCriteria;
-import com.demo.design.hFilter.concreteFilter.HarmfulRubbishCriteria;
-import com.demo.design.hFilter.concreteFilter.RecycledRubbishCriteria;
-import com.demo.design.hFilter.concreteFilter.WetRubbishCriteria;
-import com.demo.design.hFilter.subject.Rubbish;
-import com.demo.design.iCombination.component.Component;
-import com.demo.design.iCombination.composite.Composite;
-import com.demo.design.iCombination.leaf.Leaf;
-import java.util.ArrayList;
-import java.util.List;
+import com.demo.design.iCombination.composite.Bags;
+import com.demo.design.iCombination.leaf.Goods;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
@@ -19,19 +10,32 @@ public class ApiTest {
 
     @Test
     public void test_iCombination() {
-        Component root = new Composite("C:");
-        Component programFiles = new Composite("Program Files");
-        Component aTxt = new Leaf("a.txt");
-
-        root.add(programFiles); //添加文件夹
-        root.add(aTxt);
-
-        Component git = new Composite("Git");
-        Component bJava = new Leaf("b.java");
-        programFiles.add(git);
-        git.add(bJava);
-
-        root.display(0);
+        float s = 0;
+        Bags BigBag, mediumBag, smallRedBag, smallWhiteBag;
+        Goods sp;
+        BigBag = new Bags("大袋子");
+        mediumBag = new Bags("中袋子");
+        smallRedBag = new Bags("红色小袋子");
+        smallWhiteBag = new Bags("白色小袋子");
+        sp = new Goods("婺源特产", 2, 7.9f);
+        smallRedBag.add(sp);
+        sp = new Goods("婺源地图", 1, 9.9f);
+        smallRedBag.add(sp);
+        sp = new Goods("韶关香菇", 2, 68);
+        smallWhiteBag.add(sp);
+        sp = new Goods("韶关红茶", 3, 180);
+        smallWhiteBag.add(sp);
+        sp = new Goods("景德镇瓷器", 1, 380);
+        mediumBag.add(sp);
+        mediumBag.add(smallRedBag);
+        sp = new Goods("李宁牌运动鞋", 1, 198);
+        BigBag.add(sp);
+        BigBag.add(smallWhiteBag);
+        BigBag.add(mediumBag);
+        log.info("您选购的商品有：");
+        BigBag.show();
+         s = BigBag.calculation();
+        log.info("要支付的总价是 {}", s + "元");
     }
 }
 
