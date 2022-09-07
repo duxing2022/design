@@ -25,7 +25,7 @@ public abstract class Pay {
     /**
      * 划账接⼝
      *
-     * @param uId     u id
+     * @param uId     uid
      * @param tradeId 交易id
      * @param amount  数量
      * @return {@link String}
